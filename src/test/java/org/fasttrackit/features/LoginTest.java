@@ -4,6 +4,7 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import org.fasttrackit.steps.LoginSteps;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,14 +25,24 @@ public class LoginTest {
     }
 
     @Test
-    public void validLoginTest(){
+    public void validLoginTest() {
         loginSteps.navigateToLoginPage();
         loginSteps.typeUserEmail("zahariucbogdan@yahoo.com");
         loginSteps.typePassword("qwerty");
         loginSteps.clickLogin();
         loginSteps.userIsLoggedIn("bogdan black");
+    }
 
     @Test
-
+    public void invalidLoginTest() {
+        loginSteps.navigateToLoginPage();
+        loginSteps.typeUserEmail("zahariucbogdan@yahoo");
+        loginSteps.typePassword("qwe");
+        loginSteps.clickLogin();
+        loginSteps.userIsLoggedIn("bogdan black");
+    }
+    @After
+    public void quit() {
+        driver.close();
     }
 }

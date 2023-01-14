@@ -1,19 +1,21 @@
 package org.fasttrackit.steps;
 
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.fasttrackit.pages.AccountPage;
 import org.fasttrackit.pages.HomePage;
+import org.fasttrackit.pages.RegisterPage;
 
 public class RegisterSteps extends ScenarioSteps {
     private HomePage homePage;
-    private AccountPage;
+    private AccountPage accountPage;
+    private RegisterPage registerPage;
     @Step
     public void navigateToRegisterPage() {
         homePage.open();
         homePage.clickOnAccountButton();
         homePage.clickOnRegisterLink();
+
     }
     @Step
     public void typeFirstName(String firstname){ registerPage.setFirstnameField(firstname);}
