@@ -41,6 +41,7 @@ public class LoginSteps extends ScenarioSteps {
 //        Assert.assertTrue(accountPage.isWelcomeText(userName));
 //        Assert.assertEquals("Hello, " + userName + "!", accountPage.getWelcomeText());
         accountPage.userIsLoggedIn(userName);
+
     }
 
     @Step

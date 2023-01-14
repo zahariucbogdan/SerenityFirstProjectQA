@@ -3,6 +3,7 @@ package org.fasttrackit.pages;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends PageObject {
@@ -17,15 +18,15 @@ public class LoginPage extends PageObject {
     private WebElementFacade loginButton;
 
     public void setEmailField(String value){
-        typeInto(emailField, value);
+        emailField.sendKeys(value);
     }
 
     public void setPasswordField(String value){
-        typeInto(passwordField, value);
+        passwordField.sendKeys(value);
     }
 
     public void clickLoginButton(){
-        clickOn(loginButton);
+        loginButton.click();
     }
 
 }
