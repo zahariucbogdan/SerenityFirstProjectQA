@@ -14,8 +14,7 @@ public class RegisterSteps extends ScenarioSteps {
     public void navigateToRegisterPage() {
         homePage.open();
         homePage.clickOnAccountButton();
-        homePage.clickOnRegisterLink();
-    }
+        homePage.clickOnRegisterLink();}
     @Step
     public void typeFirstName(String firstname){ registerPage.setFirstnameField(firstname);}
     @Step

@@ -15,7 +15,6 @@ public class LoginTest {
 
     @Managed(uniqueSession = true)
     public WebDriver driver;
-
     @Steps
     private LoginSteps loginSteps;
     @Before
@@ -37,6 +36,5 @@ public class LoginTest {
         loginSteps.clickLogin();
         loginSteps.userIsLoggedIn("bogdan black");}
     @After
-    public void quit() {
-        driver.close();}
+    public void quit() {driver.close();}
 }
