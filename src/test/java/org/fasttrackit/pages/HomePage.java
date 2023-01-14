@@ -12,7 +12,6 @@ public class HomePage extends PageObject {
 
     @FindBy(css = ".skip-account .label")
     private WebElementFacade accountButton;
-
     @FindBy(css = "[title='Log In']")
     private WebElementFacade loginLink;
     @FindBy(css = "div.links:nth-child(1) > ul:nth-child(1) > li:nth-child(5) > a:nth-child(1)")

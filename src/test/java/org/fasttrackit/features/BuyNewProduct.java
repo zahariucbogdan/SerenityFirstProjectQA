@@ -34,7 +34,6 @@ public class BuyNewProduct {
         ByNewProductSteps.shippingMetod();
         ByNewProductSteps.reviwOrder();
         ByNewProductSteps.placeOrder();
-
     }
     @After
     public void quit() {

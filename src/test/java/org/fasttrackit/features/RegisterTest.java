@@ -15,7 +15,6 @@ import org.openqa.selenium.WebDriver;
     public class RegisterTest {
     @Managed(uniqueSession = true)
     public WebDriver driver;
-
     @Steps
     private RegisterSteps registerSteps;
     @Before
@@ -24,15 +23,13 @@ import org.openqa.selenium.WebDriver;
     }
     @Test
     public void RegisterTest(){
-
         registerSteps.typeFirstName("Zahariuc");
         registerSteps.typeMiddleName("Nicolae");
         registerSteps.typeLastnameField("Bogdan");
         registerSteps.typeUserEmail("zahariucbogdan@yahoo.com");
         registerSteps.typePasswordField("qwerty");
         registerSteps.typeConfirmEmailField("qwerty");
-        registerSteps.clickRegister();
-    }
+        registerSteps.clickRegister();}
     @After
     public void quit() {
         driver.close();

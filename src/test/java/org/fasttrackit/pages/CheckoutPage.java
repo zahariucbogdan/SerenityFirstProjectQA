@@ -28,7 +28,6 @@ public class CheckoutPage extends PageObject {
     private WebElementFacade selectFreeShipping;
     @FindBy (id = "shipping-method-buttons-container")
     private WebElementFacade shippingMethodContinueToPayment;
-
     @FindBy (id = "payment-buttons-container")
     private WebElementFacade paymentButtonsContinueToOrderReview;
     @FindBy (id="review-buttons-container")

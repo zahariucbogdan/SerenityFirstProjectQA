@@ -10,21 +10,16 @@ public class LoginPage extends PageObject {
 
     @FindBy(id = "email")
     private WebElementFacade emailField;
-
     @FindBy(id =  "pass")
     private WebElementFacade passwordField;
-
     @FindBy(id = "send2")
     private WebElementFacade loginButton;
-
     public void setEmailField(String value){
         emailField.sendKeys(value);
     }
-
     public void setPasswordField(String value){
         passwordField.sendKeys(value);
     }
-
     public void clickLoginButton(){
         loginButton.click();
     }

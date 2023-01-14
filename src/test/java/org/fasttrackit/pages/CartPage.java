@@ -13,9 +13,8 @@ public class CartPage extends PageObject {
     private  WebElementFacade cityname;
     @FindBy (id = "postcode")
     private  WebElementFacade postcode;
-    @FindBy (css = ".method-checkout-cart-methods-onepage-bottom > button:nth-child(1) > span:nth-child(1) > span:nth-child(1)");
+    @FindBy (css = ".cart-totals span span")
     private  WebElementFacade proceedtochechout;
-
     public void setSelectCountry(String value){
         selectcountry.sendKeys(value);}
     public void setSelectRegion(String value){ typeInto (selectregion,value);}
