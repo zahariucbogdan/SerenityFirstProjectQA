@@ -26,7 +26,7 @@ import org.openqa.selenium.WebDriver;
         registerSteps.typeFirstName("Zahariuc");
         registerSteps.typeMiddleName("Nicolae");
         registerSteps.typeLastnameField("Bogdan");
-        registerSteps.typeUserEmail("zahariucbogdan@yahoo.com");
+        registerSteps.typeUserEmail("zahariucbogd@yahoo.com");
         registerSteps.typePasswordField("qwerty");
         registerSteps.typeConfirmEmailField("qwerty");
         registerSteps.clickRegister();}

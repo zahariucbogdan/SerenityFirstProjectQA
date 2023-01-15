@@ -5,7 +5,7 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.support.FindBy;
 
 public class VipPage extends PageObject {
-    @FindBy(id = "product-collection-image-427")
-    private WebElementFacade selectproduct;
-    public void setSelectproduct(String value){ clickOn(selectproduct);}
+    @FindBy(id = "product-collection-image-412")
+    private WebElementFacade clickproduct;
+    public void clickproduct(){clickproduct.click();}
 }

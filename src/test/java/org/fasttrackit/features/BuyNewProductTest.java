@@ -25,11 +25,12 @@ public class BuyNewProductTest {
     public void buyNewProductTest() {
         buyNewProductSteps.openHomePage();
         buyNewProductSteps.clickAccountBotton();
+        buyNewProductSteps.clickOnLoginLink();
         buyNewProductSteps.typeUserEmail("bogdan_black@yahoo.com");
-        buyNewProductSteps.typePassword("qwerty");
-        buyNewProductSteps.clickLoginBotton();
+        buyNewProductSteps.typeUserPassword("qwerty");
+        buyNewProductSteps.clickHomeBotton();
         buyNewProductSteps.navigateToVipPage();
-        buyNewProductSteps.selectProduct();
+        buyNewProductSteps.clickProduct();
         buyNewProductSteps.selectColor();
         buyNewProductSteps.clickSizeM();
         buyNewProductSteps.clickAddToCart();
@@ -37,15 +38,15 @@ public class BuyNewProductTest {
         buyNewProductSteps.selectRegion("Iasi");
         buyNewProductSteps.typeCity("Iasi");
         buyNewProductSteps.typePostCode("700460");
-        buyNewProductSteps.clickProceedToCheckout("zahariuc");
+        buyNewProductSteps.clickProceedToCheckout();
         buyNewProductSteps.typeBillingFirstName("nicolae");
         buyNewProductSteps.typeBillingMiddleName("bogdan");
-        buyNewProductSteps.typeBillingLastName("titu maiorescu,nr 10");
-        buyNewProductSteps.typeBillingStreet("Iasi");
-        buyNewProductSteps.typeBillingCity("Romania");
-        buyNewProductSteps.typeBillingCountry_id("700460");
-        buyNewProductSteps.typeBillingPostCode("0734931189");
-        buyNewProductSteps.typeBillingPhone();
+        buyNewProductSteps.typeBillingLastName("bogdan");
+        buyNewProductSteps.typeBillingStreet("titu maiorescu,nr 10");
+        buyNewProductSteps.typeBillingCity("Iasi");
+        buyNewProductSteps.typeBillingCountry_id("Romania");
+        buyNewProductSteps.typeBillingPostCode("700460");
+        buyNewProductSteps.typeBillingPhone("0734931189");
         buyNewProductSteps.clickBillingButtonContinueToShipping();
         buyNewProductSteps.clickFreeShipping();
         buyNewProductSteps.clickShippingMethodContinueToPayment();

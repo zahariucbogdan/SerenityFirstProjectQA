@@ -14,14 +14,12 @@ public class LoginPage extends PageObject {
     private WebElementFacade passwordField;
     @FindBy(id = "send2")
     private WebElementFacade loginButton;
-    public void setEmailField(String value){
-        emailField.sendKeys(value);
+
+    public LoginPage() {
     }
-    public void setPasswordField(String value){
-        passwordField.sendKeys(value);
-    }
-    public void clickLoginButton(){
-        loginButton.click();
-    }
+
+    public void setEmailField(String value){typeInto(emailField,value); }
+    public void setPasswordField(String value){typeInto(passwordField,value); }
+    public void clickLoginButton(){clickOn(loginButton); }
 
 }

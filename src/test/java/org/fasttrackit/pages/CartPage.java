@@ -15,9 +15,8 @@ public class CartPage extends PageObject {
     private  WebElementFacade postcode;
     @FindBy (css = ".cart-totals span span")
     private  WebElementFacade proceedtochechout;
-    public void setSelectCountry(String value){
-        selectcountry.sendKeys(value);}
-    public void setSelectRegion(String value){ typeInto (selectregion,value);}
+    public void clickSelectCountry(String value){ typeInto (selectcountry,value);}
+    public void clickSelectRegion(String value){ typeInto (selectregion,value);}
     public void setCityname(String value){ typeInto (cityname,value);}
     public void setpostcode(String value){ typeInto(postcode,value);}
     public void clickProceedtochechout(){ clickOn(proceedtochechout);}
