@@ -10,14 +10,12 @@ public class SearchTest extends BaseTest {
         searchSteps.clickSearchIcon();
         searchSteps.verifyProductIsInList("SULLIVAN SPORT COAT");
     }
-
     @Test
     public void searchForFullProductNameTest(){
         searchSteps.searchForKeyword("SULLIVAN SPORT COAT");
         searchSteps.clickSearchIcon();
         searchSteps.verifyProductIsInList("SULLIVAN SPORT COAT");
     }
-
     @Test
     public void verifyPriceAscendingTest(){
         searchSteps.searchForKeyword("top");
