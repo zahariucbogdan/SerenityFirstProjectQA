@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends PageObject {
+public class LoginPage extends BasePage {
 
     @FindBy(id = "email")
     private WebElementFacade emailField;
@@ -14,6 +14,8 @@ public class LoginPage extends PageObject {
     private WebElementFacade passwordField;
     @FindBy(id = "send2")
     private WebElementFacade loginButton;
+    @FindBy(id = "advice-required-entry-pass")
+    private WebElementFacade requiredPasswordElement;
 
     public LoginPage() {
     }
@@ -21,5 +23,9 @@ public class LoginPage extends PageObject {
     public void setEmailField(String value){typeInto(emailField,value); }
     public void setPasswordField(String value){typeInto(passwordField,value); }
     public void clickLoginButton(){clickOn(loginButton); }
+    public String getRequiredPasswordText() {
+        waitFor(requiredPasswordElement);
+        return requiredPasswordElement.getText();
+    }
 
 }

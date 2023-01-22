@@ -1,5 +1,6 @@
 package org.fasttrackit.features;
 
+import jdk.vm.ci.meta.Constant;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -23,6 +24,7 @@ import org.openqa.selenium.WebDriver;
     }
     @Test
     public void RegisterTest(){
+        registerSteps.navigateToRegisterPage();
         registerSteps.typeFirstName("Zahariuc");
         registerSteps.typeMiddleName("Nicolae");
         registerSteps.typeLastnameField("Bogdan");
@@ -30,8 +32,8 @@ import org.openqa.selenium.WebDriver;
         registerSteps.typePasswordField("qwerty");
         registerSteps.typeConfirmEmailField("qwerty");
         registerSteps.clickRegister();}
-    @After
-    public void quit() {
-        driver.close();
-    }
+    //@After
+   // public void quit() {
+     //   driver.close();
+   // }
 }

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.By;
 
 
-public class RegisterPage extends PageObject {
+public class RegisterPage extends BasePage {
     @FindBy(id = "#firstname")
     private WebElementFacade firstnameField;
     @FindBy(id = "#middlename")
