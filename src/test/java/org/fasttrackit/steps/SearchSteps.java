@@ -1,8 +1,6 @@
 package org.fasttrackit.steps;
-
 import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
-
 public class SearchSteps extends BaseSteps {
     @Step
     public void searchForKeyword(String keyword) {

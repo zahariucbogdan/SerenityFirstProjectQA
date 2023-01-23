@@ -9,10 +9,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
-
 @RunWith(SerenityRunner.class)
 public class BuyNewProductTest {
-
     @Managed(uniqueSession = true)
     public WebDriver driver;
     @Steps

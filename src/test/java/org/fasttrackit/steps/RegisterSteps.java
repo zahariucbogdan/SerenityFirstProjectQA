@@ -1,11 +1,9 @@
 package org.fasttrackit.steps;
-
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.fasttrackit.pages.AccountPage;
 import org.fasttrackit.pages.HomePage;
 import org.fasttrackit.pages.RegisterPage;
-
 public class RegisterSteps extends ScenarioSteps {
     private HomePage homePage;
     private AccountPage accountPage;
